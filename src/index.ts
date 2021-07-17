@@ -4,7 +4,6 @@ import { Readable } from "stream";
 import { jsonType } from "./types";
 
 export const reverse = (input: string) => {
-    //First aproach
     let output = "";
     for (let i = input.length - 1; i >= 0; i--) {
         const element = input[i];
