@@ -47,7 +47,7 @@ export const Init = (stdin: Readable | null = null) => {
             executionTime: `${Number(end - start) / 1000000}ms`,
         };
 
-        writeFileSync("processed2.json", JSON.stringify(output, null, 4));
+        writeFileSync("processed.json", JSON.stringify(output, null, 4));
         rl.close();
     });
 };
